@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="af">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eben &amp; Anje — 11 Desember 2026 — Rosemary Hill</title>
+<meta name="description" content="Sluit by ons aan vir die troue van Eben Spangenberg en Anje Millard by Rosemary Hill-plaas, Pretoria — 11 Desember 2026.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,400;1,9..144,500&family=Karla:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --parchment:#F5F1E6;
+  --parchment-deep:#EDE7D6;
+  --rosemary:#33402F;
+  --rosemary-deep:#262F23;
+  --sage:#7C8B6F;
+  --sage-soft:#E3E7D8;
+  --clay:#B97D62;
+  --ink:#2B2B26;
+  --line:rgba(51,64,47,.18);
+  --display:'Fraunces',serif;
+  --body:'Karla',sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:var(--body);
+  background:var(--parchment);
+  color:var(--ink);
+  line-height:1.65;
+  font-size:17px;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit}
+
+/* ---------- shared ---------- */
+.wrap{max-width:1060px;margin:0 auto;padding:0 24px}
+.eyebrow{
+  font-size:.78rem;letter-spacing:.32em;text-transform:uppercase;
+  color:var(--sage);font-weight:600;
+}
+.section-title{
+  font-family:var(--display);font-weight:400;
+  font-size:clamp(2rem,4.4vw,3rem);
+  color:var(--rosemary);line-height:1.15;
+  margin:.35em 0 .5em;
+}
+.section-title em{font-style:italic;font-weight:300}
+section{padding:96px 0}
+.divider{display:flex;justify-content:center;padding:8px 0 0}
+
+/* ---------- nav ---------- */
+nav{
+  position:sticky;top:0;z-index:50;
+  background:rgba(245,241,230,.92);backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--line);
+}
+.nav-inner{
+  max-width:1060px;margin:0 auto;padding:14px 24px;
+  display:flex;align-items:center;justify-content:space-between;gap:16px;
+}
+.nav-monogram{
+  font-family:var(--display);font-style:italic;font-size:1.25rem;
+  color:var(--rosemary);text-decoration:none;white-space:nowrap;
+}
+.nav-links{display:flex;gap:26px;flex-wrap:wrap}
+.nav-links a{
+  text-decoration:none;font-size:.82rem;letter-spacing:.14em;
+  text-transform:uppercase;font-weight:600;color:var(--rosemary);
+  padding:4px 0;border-bottom:2px solid transparent;
+  transition:border-color .2s,color .2s;
+}
+.nav-links a:hover,.nav-links a:focus-visible{border-color:var(--clay);color:var(--clay)}
+.nav-rsvp{
+  background:var(--rosemary);color:var(--parchment) !important;
+  padding:9px 20px !important;border-radius:999px;border:none !important;
+  transition:background .2s;
+}
+.nav-rsvp:hover,.nav-rsvp:focus-visible{background:var(--clay)}
+:focus-visible{outline:2px solid var(--clay);outline-offset:3px}
+
+/* ---------- hero ---------- */
+header.hero{
+  position:relative;overflow:hidden;
+  padding:84px 24px 110px;text-align:center;
+}
+.hero-sprig{position:absolute;opacity:.55;pointer-events:none}
+.hero-sprig.left{top:30px;left:-40px;transform:rotate(18deg)}
+.hero-sprig.right{bottom:-10px;right:-46px;transform:rotate(200deg)}
+.hero .eyebrow{display:block;margin-bottom:18px}
+.hero-names{
+  font-family:var(--display);font-weight:300;font-style:italic;
+  font-size:clamp(3rem,8.5vw,5.6rem);
+  color:var(--rosemary);line-height:1.05;
+}
+.hero-amp{
+  display:block;font-size:.38em;font-style:normal;font-weight:400;
+  letter-spacing:.45em;text-transform:uppercase;color:var(--clay);
+  margin:.55em 0;
+}
+.hero-sub{
+  margin-top:26px;font-size:1.05rem;letter-spacing:.06em;color:var(--ink);
+}
+.hero-sub strong{font-weight:700;color:var(--rosemary)}
+.hero-arch{
+  margin:48px auto 0;max-width:430px;
+  aspect-ratio:4/5;
+  border-radius:215px 215px 18px 18px;
+  border:1px solid var(--line);
+  padding:14px;background:var(--parchment-deep);
+}
+.hero-arch .photo-ph{border-radius:201px 201px 8px 8px;height:100%}
+.countdown{
+  display:flex;justify-content:center;gap:clamp(18px,5vw,44px);
+  margin-top:54px;flex-wrap:wrap;
+}
+.count-cell{min-width:74px}
+.count-num{
+  font-family:var(--display);font-size:clamp(2rem,5vw,2.9rem);
+  font-weight:500;color:var(--rosemary);line-height:1;
+}
+.count-label{
+  font-size:.72rem;letter-spacing:.26em;text-transform:uppercase;
+  color:var(--sage);margin-top:8px;font-weight:600;
+}
+
+/* ---------- photo placeholders ---------- */
+.photo-ph{
+  background:
+    repeating-linear-gradient(45deg,rgba(124,139,111,.10) 0 14px,rgba(124,139,111,.04) 14px 28px),
+    var(--sage-soft);
+  border:1px dashed rgba(124,139,111,.55);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:10px;color:var(--sage);text-align:center;padding:18px;
+}
+.photo-ph svg{opacity:.8}
+.photo-ph span{
+  font-size:.74rem;letter-spacing:.18em;text-transform:uppercase;font-weight:700;
+  max-width:200px;line-height:1.5;
+}
+
+/* ---------- story timeline ---------- */
+#storie{background:var(--parchment)}
+.timeline{position:relative;margin-top:64px}
+.timeline::before{
+  content:"";position:absolute;top:0;bottom:0;left:50%;
+  width:2px;transform:translateX(-50%);
+  background:repeating-linear-gradient(to bottom,var(--sage) 0 10px,transparent 10px 18px);
+  opacity:.6;
+}
+.milestone{
+  position:relative;display:grid;
+  grid-template-columns:1fr 92px 1fr;
+  align-items:center;margin-bottom:84px;
+}
+.milestone:last-child{margin-bottom:0}
+.m-node{
+  grid-column:2;justify-self:center;z-index:2;
+  width:58px;height:58px;border-radius:50%;
+  background:var(--parchment);border:1.5px solid var(--sage);
+  display:flex;align-items:center;justify-content:center;
+}
+.m-card{background:transparent}
+.m-card .m-date{
+  font-size:.76rem;letter-spacing:.28em;text-transform:uppercase;
+  color:var(--clay);font-weight:700;
+}
+.m-card h3{
+  font-family:var(--display);font-weight:500;font-size:1.55rem;
+  color:var(--rosemary);margin:.3em 0 .35em;
+}
+.m-card p{font-size:.98rem;color:#4A4A42;max-width:380px}
+.m-photo{aspect-ratio:4/3;border-radius:12px;overflow:hidden}
+.milestone:nth-child(odd) .m-card{grid-column:1;text-align:right;justify-self:end}
+.milestone:nth-child(odd) .m-card p{margin-left:auto}
+.milestone:nth-child(odd) .m-photo{grid-column:3;justify-self:start;width:min(100%,340px)}
+.milestone:nth-child(even) .m-card{grid-column:3;text-align:left;justify-self:start}
+.milestone:nth-child(even) .m-photo{grid-column:1;justify-self:end;width:min(100%,340px)}
+.m-final .m-node{background:var(--rosemary);border-color:var(--rosemary)}
+
+/* ---------- details ---------- */
+#besonderhede{background:var(--rosemary);color:var(--parchment)}
+#besonderhede .eyebrow{color:#A9B89B}
+#besonderhede .section-title{color:var(--parchment)}
+.details-grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+  gap:22px;margin-top:48px;
+}
+.d-card{
+  background:rgba(245,241,230,.06);
+  border:1px solid rgba(245,241,230,.18);
+  border-radius:14px;padding:30px 26px;
+}
+.d-card svg{margin-bottom:14px}
+.d-card h3{
+  font-family:var(--display);font-weight:500;font-size:1.2rem;
+  letter-spacing:.02em;margin-bottom:.45em;color:#EDE7D6;
+}
+.d-card p{font-size:.93rem;color:rgba(245,241,230,.82)}
+.d-card .ph-note{
+  display:inline-block;margin-top:10px;font-size:.72rem;letter-spacing:.12em;
+  text-transform:uppercase;color:#C9A78F;border:1px dashed rgba(201,167,143,.5);
+  border-radius:999px;padding:3px 12px;font-weight:700;
+}
+.venue-strip{
+  margin-top:56px;display:grid;grid-template-columns:1.1fr .9fr;
+  gap:34px;align-items:center;
+}
+.venue-strip .photo-ph{aspect-ratio:16/10;border-radius:14px;
+  border-color:rgba(245,241,230,.4);color:#C2CEB4;
+  background:repeating-linear-gradient(45deg,rgba(245,241,230,.07) 0 14px,rgba(245,241,230,.02) 14px 28px),rgba(245,241,230,.05);
+}
+.venue-copy h3{
+  font-family:var(--display);font-style:italic;font-weight:400;
+  font-size:1.7rem;color:#EDE7D6;margin-bottom:.4em;
+}
+.venue-copy p{font-size:.96rem;color:rgba(245,241,230,.85);margin-bottom:1em}
+.btn-ghost{
+  display:inline-block;text-decoration:none;font-weight:700;font-size:.8rem;
+  letter-spacing:.18em;text-transform:uppercase;color:var(--parchment);
+  border:1px solid rgba(245,241,230,.5);border-radius:999px;padding:11px 26px;
+  transition:background .2s,color .2s;
+}
+.btn-ghost:hover,.btn-ghost:focus-visible{background:var(--parchment);color:var(--rosemary)}
+
+/* ---------- rsvp ---------- */
+#rsvp{background:var(--parchment-deep)}
+.rsvp-card{
+  max-width:640px;margin:48px auto 0;background:var(--parchment);
+  border:1px solid var(--line);border-radius:18px;
+  padding:clamp(28px,5vw,52px);
+  box-shadow:0 24px 60px -36px rgba(51,64,47,.45);
+}
+.rsvp-deadline{
+  text-align:center;font-size:.86rem;letter-spacing:.1em;color:var(--clay);
+  font-weight:700;text-transform:uppercase;margin-bottom:30px;
+}
+.f-row{margin-bottom:22px}
+.f-row label{
+  display:block;font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;
+  font-weight:700;color:var(--rosemary);margin-bottom:8px;
+}
+.f-row input[type=text],.f-row input[type=email],.f-row input[type=number],
+.f-row select,.f-row textarea{
+  width:100%;font-family:var(--body);font-size:1rem;color:var(--ink);
+  background:#FBF9F2;border:1px solid var(--line);border-radius:10px;
+  padding:13px 15px;transition:border-color .2s;
+}
+.f-row textarea{min-height:96px;resize:vertical}
+.f-row input:focus,.f-row select:focus,.f-row textarea:focus{
+  outline:none;border-color:var(--sage);
+}
+.attend-toggle{display:flex;gap:12px}
+.attend-toggle input{position:absolute;opacity:0;pointer-events:none}
+.attend-toggle label{
+  flex:1;text-align:center;cursor:pointer;margin:0;
+  border:1px solid var(--line);border-radius:10px;padding:14px 10px;
+  font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700;
+  color:var(--rosemary);background:#FBF9F2;transition:all .2s;
+}
+.attend-toggle input:checked + label{
+  background:var(--rosemary);color:var(--parchment);border-color:var(--rosemary);
+}
+.attend-toggle input:focus-visible + label{outline:2px solid var(--clay);outline-offset:2px}
+.btn-submit{
+  width:100%;cursor:pointer;border:none;border-radius:999px;
+  background:var(--rosemary);color:var(--parchment);
+  font-family:var(--body);font-weight:700;font-size:.9rem;
+  letter-spacing:.22em;text-transform:uppercase;padding:17px;
+  transition:background .2s;
+}
+.btn-submit:hover,.btn-submit:focus-visible{background:var(--clay)}
+.btn-submit[disabled]{opacity:.6;cursor:wait}
+.form-status{
+  display:none;text-align:center;border-radius:12px;padding:16px;
+  margin-top:18px;font-weight:600;font-size:.95rem;
+}
+.form-status.ok{display:block;background:var(--sage-soft);color:var(--rosemary)}
+.form-status.err{display:block;background:#F3E2DA;color:#8C4A2F}
+.rsvp-mailto{
+  text-align:center;font-size:.85rem;color:#6B6B60;margin-top:22px;
+}
+.rsvp-mailto a{color:var(--clay);font-weight:700}
+
+/* ---------- footer ---------- */
+footer{
+  background:var(--rosemary-deep);color:rgba(245,241,230,.75);
+  text-align:center;padding:72px 24px;
+}
+footer .f-names{
+  font-family:var(--display);font-style:italic;font-size:1.9rem;
+  color:var(--parchment);margin:18px 0 6px;
+}
+footer .f-date{font-size:.8rem;letter-spacing:.3em;text-transform:uppercase;font-weight:600}
+footer .f-note{margin-top:26px;font-size:.82rem;color:rgba(245,241,230,.5)}
+
+/* ---------- animation ---------- */
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .reveal{opacity:1;transform:none;transition:none}
+}
+
+/* ---------- responsive ---------- */
+@media (max-width:780px){
+  section{padding:72px 0}
+  .nav-links a:not(.nav-rsvp){display:none}
+  .timeline::before{left:28px}
+  .milestone{grid-template-columns:56px 1fr;margin-bottom:64px}
+  .m-node{grid-column:1;width:44px;height:44px}
+  .m-node svg{width:22px;height:22px}
+  .milestone:nth-child(odd) .m-card,
+  .milestone:nth-child(even) .m-card{grid-column:2;text-align:left;justify-self:start}
+  .milestone:nth-child(odd) .m-card p{margin-left:0}
+  .milestone:nth-child(odd) .m-photo,
+  .milestone:nth-child(even) .m-photo{
+    grid-column:2;justify-self:start;margin-top:18px;width:min(100%,340px);
+  }
+  .venue-strip{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-monogram" href="#bo">E &amp; A</a>
+    <div class="nav-links">
+      <a href="#storie">Ons Storie</a>
+      <a href="#besonderhede">Die Dag</a>
+      <a href="#rsvp" class="nav-rsvp">RSVP</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="bo">
+  <!-- roosmaryntakkies -->
+  <svg class="hero-sprig left" width="220" height="320" viewBox="0 0 110 160" fill="none" aria-hidden="true">
+    <path d="M55 155 C 50 110, 52 60, 58 8" stroke="#7C8B6F" stroke-width="2" stroke-linecap="round"/>
+    <g stroke="#7C8B6F" stroke-width="1.8" stroke-linecap="round">
+      <path d="M56 20 L 40 8"/><path d="M56 20 L 72 10"/>
+      <path d="M55 36 L 37 26"/><path d="M55 36 L 73 28"/>
+      <path d="M54 52 L 35 44"/><path d="M54 52 L 73 46"/>
+      <path d="M53 68 L 34 62"/><path d="M53 68 L 72 64"/>
+      <path d="M53 84 L 34 80"/><path d="M53 84 L 72 82"/>
+      <path d="M53 100 L 35 98"/><path d="M53 100 L 71 99"/>
+      <path d="M54 116 L 36 116"/><path d="M54 116 L 71 117"/>
+      <path d="M54 132 L 38 134"/><path d="M54 132 L 70 135"/>
+    </g>
+  </svg>
+  <svg class="hero-sprig right" width="220" height="320" viewBox="0 0 110 160" fill="none" aria-hidden="true">
+    <path d="M55 155 C 50 110, 52 60, 58 8" stroke="#7C8B6F" stroke-width="2" stroke-linecap="round"/>
+    <g stroke="#7C8B6F" stroke-width="1.8" stroke-linecap="round">
+      <path d="M56 20 L 40 8"/><path d="M56 20 L 72 10"/>
+      <path d="M55 36 L 37 26"/><path d="M55 36 L 73 28"/>
+      <path d="M54 52 L 35 44"/><path d="M54 52 L 73 46"/>
+      <path d="M53 68 L 34 62"/><path d="M53 68 L 72 64"/>
+      <path d="M53 84 L 34 80"/><path d="M53 84 L 72 82"/>
+      <path d="M53 100 L 35 98"/><path d="M53 100 L 71 99"/>
+      <path d="M54 116 L 36 116"/><path d="M54 116 L 71 117"/>
+      <path d="M54 132 L 38 134"/><path d="M54 132 L 70 135"/>
+    </g>
+  </svg>
+
+  <span class="eyebrow">Saam met hulle families</span>
+  <h1 class="hero-names">
+    Eben Spangenberg
+    <span class="hero-amp">en</span>
+    Anje Millard
+  </h1>
+  <p class="hero-sub">
+    nooi jou hartlik uit na hul troue<br>
+    <strong>Vrydag, 11 Desember 2026 · 15:30</strong><br>
+    Rosemary Hill-plaas · Pretoria-Oos, Suid-Afrika
+  </p>
+
+  <div class="hero-arch">
+    <div class="photo-ph">
+      <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+        <rect x="3" y="5" width="18" height="14" rx="2"/>
+        <circle cx="9" cy="10" r="1.6"/>
+        <path d="M3 17 l5 -5 4 4 3 -3 6 6"/>
+      </svg>
+      <span>Verlooffoto van Eben &amp; Anje kom hier</span>
+    </div>
+  </div>
+
+  <div class="countdown" id="countdown" aria-label="Aftelling tot die troue">
+    <div class="count-cell"><div class="count-num" id="cd-days">—</div><div class="count-label">Dae</div></div>
+    <div class="count-cell"><div class="count-num" id="cd-hours">—</div><div class="count-label">Ure</div></div>
+    <div class="count-cell"><div class="count-num" id="cd-mins">—</div><div class="count-label">Minute</div></div>
+    <div class="count-cell"><div class="count-num" id="cd-secs">—</div><div class="count-label">Sekondes</div></div>
+  </div>
+</header>
+
+<!-- ================= STORIE ================= -->
+<section id="storie">
+  <div class="wrap" style="text-align:center">
+    <span class="eyebrow">Hoe ons hier gekom het</span>
+    <h2 class="section-title">Ons storie, <em>takkie vir takkie</em></h2>
+    <p style="max-width:560px;margin:0 auto;color:#4A4A42">
+      Vyf jaar, een plaastroue. Hier is die kort weergawe —
+      die lang weergawe vertel ons graag op die dag oor 'n houtoondpizza.
+    </p>
+  </div>
+
+  <div class="wrap">
+    <div class="timeline">
+
+      <div class="milestone reveal">
+        <div class="m-card">
+          <div class="m-date">20 Februarie 2021 · plekhouer</div>
+          <h3>Die dag ons ontmoet het</h3>
+          <p>[Plekhouer — waar alles begin het. 'n Sin of twee oor hoe Eben en Anje se paaie die eerste keer gekruis het.]</p>
+        </div>
+        <div class="m-node" aria-hidden="true">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#7C8B6F" stroke-width="1.6">
+            <circle cx="9" cy="9" r="3.4"/><circle cx="15.5" cy="14.5" r="3.4"/>
+          </svg>
+        </div>
+        <div class="m-photo photo-ph"><span>Foto uit die tyd toe julle ontmoet het</span></div>
+      </div>
+
+      <div class="milestone reveal">
+        <div class="m-card">
+          <div class="m-date">April 2021 · plekhouer</div>
+          <h3>Die eerste afspraakkie</h3>
+          <p>[Plekhouer — koffie wat aandete geword het? 'n Stappie? Vertel hier die storie van die eerste amptelike afspraak.]</p>
+        </div>
+        <div class="m-node" aria-hidden="true">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#7C8B6F" stroke-width="1.6">
+            <path d="M7 19c0-5 2-9 5-13M12 6c3 4 5 8 5 13" stroke-linecap="round"/>
+            <path d="M5 20h14" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="m-photo photo-ph"><span>Foto van die eerste afspraak of 'n spesiale plek</span></div>
+      </div>
+
+      <div class="milestone reveal">
+        <div class="m-card">
+          <div class="m-date">Julie 2021 · plekhouer</div>
+          <h3>Amptelik 'n paartjie</h3>
+          <p>[Plekhouer — die oomblik toe dit amptelik geword het. Wie het gevra, waar, en hoe groot was die senuwees?]</p>
+        </div>
+        <div class="m-node" aria-hidden="true">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#7C8B6F" stroke-width="1.6">
+            <path d="M12 20s-7-4.5-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.5-7 10-7 10z" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="m-photo photo-ph"><span>'n Gunstelingfoto van julle twee</span></div>
+      </div>
+
+      <div class="milestone reveal">
+        <div class="m-card">
+          <div class="m-date">20 Februarie 2026 · plekhouer</div>
+          <h3>Sy het ja gesê</h3>
+          <p>[Plekhouer — die verlowingstorie. Presies vyf jaar later? Vertel die gaste hoe die groot vraag gevra is.]</p>
+        </div>
+        <div class="m-node" aria-hidden="true">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#7C8B6F" stroke-width="1.6">
+            <circle cx="12" cy="14" r="6"/>
+            <path d="M9.5 8 L12 4 L14.5 8" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="m-photo photo-ph"><span>Verloffoto kom hier</span></div>
+      </div>
+
+      <div class="milestone m-final reveal">
+        <div class="m-card">
+          <div class="m-date">11 Desember 2026</div>
+          <h3>Die troudag</h3>
+          <p>Onder die somerhemel by Rosemary Hill word Anje Millard, Anje Spangenberg — en die mooiste hoofstuk begin.</p>
+        </div>
+        <div class="m-node" aria-hidden="true">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#F5F1E6" stroke-width="1.6">
+            <circle cx="9.5" cy="13" r="5"/><circle cx="14.5" cy="13" r="5"/>
+          </svg>
+        </div>
+        <div class="m-photo photo-ph"><span>Hou hierdie plekkie vir 'n troudagfoto</span></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= BESONDERHEDE ================= -->
+<section id="besonderhede">
+  <div class="wrap" style="text-align:center">
+    <span class="eyebrow">Vrydag, 11 Desember 2026</span>
+    <h2 class="section-title">Die <em>groot dag</em></h2>
+  </div>
+
+  <div class="wrap">
+    <div class="details-grid">
+      <div class="d-card">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#C9A78F" stroke-width="1.6" aria-hidden="true">
+          <circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2" stroke-linecap="round"/>
+        </svg>
+        <h3>Seremonie · 15:30</h3>
+        <p>Neem asseblief teen 15:15 julle sitplekke in. Die seremonie vind buite op die plaas plaas, gevolg deur happies in die tuin en die onthaal tot laat in die aand.</p>
+        <span class="ph-note">Program word nog bevestig</span>
+      </div>
+      <div class="d-card">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#C9A78F" stroke-width="1.6" aria-hidden="true">
+          <path d="M12 21s-7-5.4-7-11a7 7 0 0 1 14 0c0 5.6-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/>
+        </svg>
+        <h3>Hoe om daar te kom</h3>
+        <p>Rosemary Hill-plaas lê langs die R104 (Beckhamweg), net oos van Pretoria — maklik bereikbaar per motor, met parkering op die plaas.</p>
+        <a class="btn-ghost" style="margin-top:12px;font-size:.7rem;padding:8px 18px" href="https://maps.google.com/?q=Rosemary+Hill+Farm+Pretoria" target="_blank" rel="noopener">Maak oop in Maps</a>
+      </div>
+      <div class="d-card">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#C9A78F" stroke-width="1.6" aria-hidden="true">
+          <path d="M6 21V8l6-4 6 4v13" stroke-linejoin="round"/><path d="M9 21v-6h6v6"/>
+        </svg>
+        <h3>Slaap oor</h3>
+        <p>Die plaas self bied kajuite, klein huisies, geodesiese koepels en glamping-tente — bespreek vroeg, Desember is spitstyd. Gastehuise in Pretoria-Oos is 20–30 minute se ry.</p>
+        <span class="ph-note">Besprekingsbesonderhede volg</span>
+      </div>
+      <div class="d-card">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#C9A78F" stroke-width="1.6" aria-hidden="true">
+          <path d="M12 3c2 3 2 5 0 7-2-2-2-4 0-7z"/><path d="M12 10v11" stroke-linecap="round"/><path d="M12 14c-2.5 0-4-1.2-4.5-3.5C10 10.5 11.5 11.7 12 14zM12 17c2.5 0 4-1.2 4.5-3.5C14 13.5 12.5 14.7 12 17z"/>
+        </svg>
+        <h3>Kleredrag</h3>
+        <p>[Plekhouer — bv. "Somer-formeel: ligte materiale en tuinvriendelike skoene. Die seremonie is op gras, so oorweeg blokhakke."]</p>
+        <span class="ph-note">Word nog bevestig</span>
+      </div>
+    </div>
+
+    <div class="venue-strip">
+      <div class="photo-ph">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+          <rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="10" r="1.6"/><path d="M3 17 l5 -5 4 4 3 -3 6 6"/>
+        </svg>
+        <span>Foto van Rosemary Hill kom hier</span>
+      </div>
+      <div class="venue-copy">
+        <h3>Rosemary Hill-plaas</h3>
+        <p>'n Skilderagtige werkende plaas net buite Pretoria-Oos — olyfboorde, kweekhuise, bospaadjies en heerlike plaaskos. As jy 'n naweek daarvan maak, kom vroeg: daar is 33&nbsp;km se staproetes, perdry, Segway-toere en twee lieflike eetplekkies.</p>
+        <a class="btn-ghost" href="https://rosemaryhill.co.za" target="_blank" rel="noopener">Besoek die plaas se webwerf</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= RSVP ================= -->
+<section id="rsvp">
+  <div class="wrap" style="text-align:center">
+    <span class="eyebrow">Laat weet asseblief</span>
+    <h2 class="section-title">Vier jy <em>saam met ons?</em></h2>
+    <p style="max-width:520px;margin:0 auto;color:#4A4A42">
+      Vul die vorm hieronder in — jou antwoord gaan direk na die paartjie.
+      Een vorm per huishouding is perfek.
+    </p>
+  </div>
+
+  <div class="wrap">
+    <div class="rsvp-card">
+      <p class="rsvp-deadline">RSVP asseblief voor [datum word nog bevestig]</p>
+
+      <form id="rsvpForm" name="rsvp" method="POST" data-netlify="true" netlify-honeypot="bot-field" novalidate>
+        <input type="hidden" name="form-name" value="rsvp">
+        <p style="display:none" aria-hidden="true">
+          <label>Moenie hierdie veld invul nie: <input name="bot-field"></label>
+        </p>
+        <div class="f-row">
+          <label for="f-name">Jou naam/name</label>
+          <input type="text" id="f-name" name="naam" placeholder="bv. Johan & Marie van der Merwe" required>
+        </div>
+
+        <div class="f-row">
+          <label for="f-email">Jou e-posadres</label>
+          <input type="email" id="f-email" name="email" placeholder="jy@voorbeeld.com" required>
+        </div>
+
+        <div class="f-row">
+          <label>Gaan jy die troue bywoon?</label>
+          <div class="attend-toggle" role="radiogroup" aria-label="Bywoning">
+            <input type="radio" id="att-yes" name="bywoning" value="Aanvaar met vreugde" required>
+            <label for="att-yes">Aanvaar met vreugde</label>
+            <input type="radio" id="att-no" name="bywoning" value="Verskoon met spyt">
+            <label for="att-no">Verskoon met spyt</label>
+          </div>
+        </div>
+
+        <div class="f-row">
+          <label for="f-count">Aantal gaste (jouself ingesluit)</label>
+          <input type="number" id="f-count" name="aantal-gaste" min="1" max="10" value="1">
+        </div>
+
+        <div class="f-row">
+          <label for="f-diet">Dieetvereistes</label>
+          <input type="text" id="f-diet" name="dieetvereistes" placeholder="Vegetaries, halaal, allergieë…">
+        </div>
+
+        <div class="f-row">
+          <label for="f-msg">'n Liedjie wat jou laat dans / 'n boodskap vir die paartjie</label>
+          <textarea id="f-msg" name="boodskap" placeholder="Opsioneel, maar word aangemoedig"></textarea>
+        </div>
+
+        <button type="submit" class="btn-submit" id="submitBtn">Stuur RSVP</button>
+        <div class="form-status" id="formStatus" role="status"></div>
+      </form>
+
+      <p class="rsvp-mailto">
+        Werk die vorm nie? E-pos jou RSVP na
+        <a href="mailto:johjacjou@gmail.com?subject=RSVP%20—%20Eben%20%26%20Anje%2C%2011%20Des%202026">johjacjou@gmail.com</a>
+      </p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <svg width="120" height="40" viewBox="0 0 120 40" fill="none" aria-hidden="true" style="margin:0 auto">
+    <path d="M10 20 C 40 10, 80 30, 110 20" stroke="#7C8B6F" stroke-width="1.5" stroke-linecap="round"/>
+    <g stroke="#7C8B6F" stroke-width="1.3" stroke-linecap="round">
+      <path d="M30 17 L 26 10"/><path d="M30 17 L 35 11"/>
+      <path d="M60 20 L 56 13"/><path d="M60 20 L 65 13"/>
+      <path d="M90 18 L 86 11"/><path d="M90 18 L 95 12"/>
+    </g>
+  </svg>
+  <div class="f-names">Eben &amp; Anje</div>
+  <div class="f-date">11 · 12 · 2026 — Rosemary Hill</div>
+  <p class="f-note">Binnekort Mnr &amp; Mev Spangenberg · Ons kan nie wag om saam met julle te vier nie</p>
+</footer>
+
+<script>
+/* ---------- aftelling ---------- */
+(function(){
+  var target = new Date('2026-12-11T15:30:00+02:00').getTime();
+  var d=document.getElementById('cd-days'),h=document.getElementById('cd-hours'),
+      m=document.getElementById('cd-mins'),s=document.getElementById('cd-secs');
+  function pad(n){return n<10?'0'+n:n}
+  function tick(){
+    var diff = target - Date.now();
+    if(diff <= 0){d.textContent=0;h.textContent='00';m.textContent='00';s.textContent='00';return}
+    d.textContent = Math.floor(diff/864e5);
+    h.textContent = pad(Math.floor(diff%864e5/36e5));
+    m.textContent = pad(Math.floor(diff%36e5/6e4));
+    s.textContent = pad(Math.floor(diff%6e4/1e3));
+    setTimeout(tick, 1000);
+  }
+  tick();
+})();
+
+/* ---------- onthul met rol ---------- */
+(function(){
+  if(!('IntersectionObserver' in window)){
+    document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('in')});
+    return;
+  }
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}
+    });
+  },{threshold:.15});
+  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
+})();
+
+/* ---------- RSVP stuur (Netlify Forms) ---------- */
+(function(){
+  var form = document.getElementById('rsvpForm');
+  var btn = document.getElementById('submitBtn');
+  var status = document.getElementById('formStatus');
+
+  form.addEventListener('submit', function(ev){
+    ev.preventDefault();
+    status.className = 'form-status';
+
+    if(!form.checkValidity()){
+      status.textContent = 'Vul asseblief jou naam, e-pos en bywoning in.';
+      status.classList.add('err');
+      return;
+    }
+
+    btn.disabled = true;
+    btn.textContent = 'Stuur tans…';
+
+    fetch('/', {
+      method:'POST',
+      headers:{'Content-Type':'application/x-www-form-urlencoded'},
+      body:new URLSearchParams(new FormData(form)).toString()
+    })
+    .then(function(r){ if(!r.ok) throw new Error('Netwerk'); })
+    .then(function(){
+      form.reset();
+      status.textContent = 'Baie dankie! Jou RSVP is op pad na Eben & Anje. 🌿';
+      status.classList.add('ok');
+    })
+    .catch(function(){
+      status.innerHTML = 'Iets het verkeerd geloop met die vorm. E-pos asseblief jou RSVP na <a href="mailto:johjacjou@gmail.com">johjacjou@gmail.com</a>.';
+      status.classList.add('err');
+    })
+    .finally(function(){
+      btn.disabled = false;
+      btn.textContent = 'Stuur RSVP';
+    });
+  });
+})();
+</script>
+</body>
+</html>
