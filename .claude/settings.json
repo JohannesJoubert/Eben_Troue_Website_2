@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(powershell -Command \"Get-Date -Year 2026 -Month 12 -Day 10 | Select-Object -ExpandProperty DayOfWeek; Get-Date -Year 2026 -Month 12 -Day 11 | Select-Object -ExpandProperty DayOfWeek\")",
+      "Bash(start \"\" \"c:\\\\Users\\\\anjem\\\\OneDrive\\\\Desktop\\\\Troue Website\\\\Eben_Troue_Website_2\\\\index.html\")"
+    ]
+  }
+}
